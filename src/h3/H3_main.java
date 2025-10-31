@@ -9,19 +9,15 @@ public class H3_main {
 		boolean a2 = i > 200;
 		boolean a3 = j > 100;
 		
-		if(a1)	{
-			k = 1;
-			if(a2)	{
-				k++;
-				if(a3)	
-					k++;
-			}
-		}
-		else	{
-			if(!(a2 && a3))	{
-				k = 4;
-			}
-		}
+		if(a1 && !a2 && !a3)
+     k = 1;
+  if(a1 && a2 && !a3)
+     k = 2;
+  if(a1 && a2 && a3)
+     k = 3;
+  if(!a1 && !a2 && !a3)
+     k = 4;
+
 		
 		System.out.println(k);
 	}
