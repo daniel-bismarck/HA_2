@@ -8,15 +8,15 @@ public class H3_main {
 		boolean a1 = i > j;
 		boolean a2 = i > 200;
 		boolean a3 = j > 100;
-		
+	
 		if(a1 && !a2 && !a3)
-	  k = 1;
+			k = 1;
 		if(a1 && a2 && !a3)
-		 k = 2;
+			k = 2;
 		if(a1 && a2 && a3)
-		 k = 3;
+			k = 3;
 		if(!a1 && !a2 && !a3)
-	  k = 4;
+			k = 4;
 
 		
 		System.out.println(k);
